@@ -26,7 +26,7 @@ export default function Home() {
       console.log("Risposta API:", data);
 
       if (data.choices && data.choices.length > 0) {
-        setResponse(data.choices[0].message.reasoning);
+        setResponse(data.choices[0].message.content);
       } else {
         setResponse("Nessuna risposta valida ricevuta dall'API.");
       }

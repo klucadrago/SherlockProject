@@ -4,7 +4,9 @@ const fetch = require('node-fetch');
 const { log } = require("console");
 const OpenAI = require("openai").default;
 
-const OPENAI_API_KEY = process.env.OPENAI_API_KEY || "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";
+require('dotenv').config();
+const OPENAI_API_KEY = process.env.OPENAI_API_KEY;
+console.log(OPENAI_API_KEY);
 
 const dev = process.env.NODE_ENV !== 'production';
 const app = next({ dev });
@@ -25,8 +27,8 @@ app.prepare().then(() => {
         baseURL: 'https://openrouter.ai/api/v1',
         apiKey: OPENAI_API_KEY,
         defaultHeaders: {
-          'HTTP-Referer': '<YOUR_SITE_URL>', // Optional. Site URL for rankings on openrouter.ai.
-          'X-Title': '<YOUR_SITE_NAME>', // Optional. Site title for rankings on openrouter.ai.
+          'HTTP-Referer': '<YOUR_SITE_URL>', 
+          'X-Title': '<YOUR_SITE_NAME>', 
         },
       });
 
