@@ -1,0 +1,42 @@
+{
+    "storia": {
+        "titolo": "Titolo della Storia Investigativa",
+        "descrizione": "Una storia dettagliata introduzione che descrive il contesto e il crimine centrale. Include dove e quando si svolge la storia.",
+        "crimine": {
+            "tipo": "Tipo di crimine (es. omicidio, furto, scomparsa)",
+            "luogo": "Luogo in cui si è verificato il crimine",
+            "orario": "Orario in cui si è verificato il crimine"
+        },
+        "sospetti": [
+            {
+                "nome": "Nome del sospetto",
+                "cognome": "Cognome del sospetto",
+                "età": "Età del sospetto",
+                "sesso": "Sesso del sospetto",
+                "descrizione_personalità": "Breve descrizione della personalità e delle caratteristiche del sospetto",
+                "motivazioni": "Motivazioni plausibili per commettere il crimine. Cosa potrebbe aver spinto questo sospetto a compiere l'atto?",
+                "alibi": "Alibi fornito dal sospetto, che deve essere verificabile o confutato.",
+                "colpevole": [
+                    true/false
+                ],
+                "domande": [
+                    {
+                        "testo": "Domanda",
+                        "risposta": "Risposta",
+                        "rilevanza": "cruciale o fuorviante"
+                    }
+                ]
+            }
+        ],
+        "indizi": [
+            {
+                "tipo": "Indizio",
+                "descrizione": "Descrizione dell'indizio, che può essere fisico, psicologico o comportamentale. Può essere un oggetto trovato, una dichiarazione, una traccia lasciata dal colpevole, ecc.",
+                "rilevanza": "cruciale o fuorviante"
+            }
+        ],
+        "soluzione": {
+            "descrizione": "Descrizione di come il crimine è stato commesso e come il colpevole viene smascherato. Includi il ruolo degli indizi e come le domande dell'investigatore abbiano rivelato la verità. Spiega come la soluzione è stata raggiunta attraverso l'analisi dei comportamenti, degli alibi e delle dichiarazioni dei sospetti."
+        }
+    }
+}
